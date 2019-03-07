@@ -1,0 +1,9 @@
+;
+; print 1 + 3
+;
+
+main:
+  set  $a  1  ;
+  set  $b  3  ;
+  add  $a  $b ;
+  out  $r     ; print 1 + 3

@@ -1,0 +1,24 @@
+;
+;   i = 200
+;
+; loop:
+;   print i
+;   if i == 0 [
+;     goto end
+;   ]
+;   i -= 1
+;   goto loop
+; end:
+;
+
+set $a 200    ; i = 200
+set $b -1     ; -1
+set $c 0      ; 0
+
+eq $a $c
+jz 8
+
+add $a $b     ;
+set $r $a     ; i -= 1
+
+jmp 3         ; goto loop

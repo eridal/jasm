@@ -1,0 +1,21 @@
+;
+; i = 0
+;
+; while i < 10 [
+;   print i
+;   i += 1
+; ]
+;
+
+main:
+  set  $a  0      ; i = 0
+  set  $b  1      ; 1
+  set  $c 10      ; 10
+loop:
+  lt   $a  $c     ; if i < 10 [
+  jn   $a  end    ;
+  out  $a         ;   print i
+  add  $a  $b     ;
+  mov  $r  $a     ;   a += 1
+  jmp  loop       ; ]
+end:
